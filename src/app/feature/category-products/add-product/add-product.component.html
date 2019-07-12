@@ -1,0 +1,44 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title modal__title" id="exampleModalLabel">Add Product</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+            </div>
+            <div class="modal-body">
+                <form #myForm="ngForm" (ngSubmit)="onAdd(myForm)">
+                    <div class="form-group">
+                        <label for="recipient-name " class="col-form-label modal__lable">Product Name</label>
+                        <input type="text" class="form-control" id="recipient-name" name="txtName" [(ngModel)]="product.name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name " class="col-form-label modal__lable">Image URL</label>
+                        <input type="text" class="form-control" id="recipient-name" name="txtImageUrl" [(ngModel)]="product.image">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name " class="col-form-label modal__lable">Price</label>
+                        <input type="text" class="form-control" id="recipient-name" name="txtPrice" [(ngModel)]="product.price">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name " class="col-form-label modal__lable">Code</label>
+                        <input type="text" class="form-control" id="recipient-name" name="txtCode" [(ngModel)]="product.code">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary modal__send">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="icon">
+    <a class="" href="#" data-toggle="modal" data-target="#exampleModal">
+        <i class="fas fa-plus icon__item" style=" margin-right: 2rem;"></i>
+    </a>
+    <a href="#"><i class="fas fa-trash-alt icon__item"></i></a>
+</div> -->

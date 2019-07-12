@@ -1,0 +1,25 @@
+<div class="container " style="margin-top: 8rem; ">
+    <div class="row item-listing list-item ">
+        <div class=" col-sm-6 list-item ">
+            <!-- <a [routerLink]="['/category',category.id]"> -->
+            <img [src]='category.image' class="list-item__image " alt="... ">
+            <!-- </a> -->
+        </div>
+        <div class="col-sm-6 list-item__body ">
+            <div class="row ">
+                <div class="col-12 ">
+                    <h4 class="list-item__title ">{{category.name}}</h4>
+                </div>
+                <div class="col-12 ">
+                    <p class="list-item__text ">{{category.description}}</p>
+                </div>
+                <!-- Nested Catgories -->
+                <app-nested-category [nested]="subCat "></app-nested-category>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

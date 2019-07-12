@@ -1,0 +1,13 @@
+<div>
+    <div class="icon">
+        <a class="" href="#" data-toggle="modal" data-target="#exampleModal">
+            <i class="fas fa-plus icon__item" style=" margin-right: 2rem;"></i>
+        </a>
+        <a><i class="fas fa-trash-alt icon__item"></i></a>
+    </div>
+    <!-- Add Product model -->
+    <app-add-product></app-add-product>
+
+    <app-product-item-listing [products]="categoryProducts"></app-product-item-listing>
+
+</div>

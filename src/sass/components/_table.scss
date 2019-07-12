@@ -1,0 +1,14 @@
+.tablee {
+    // margin-top: 8rem;
+    text-align: center;
+    &__th {
+        font-family: $font-primary;
+        color: $color-primary;
+    }
+    &__img {
+        width: 30%
+    }
+    &__td {
+        font-family: $font-secondry;
+    }
+}

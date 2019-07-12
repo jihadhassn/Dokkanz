@@ -1,0 +1,10 @@
+.modal {
+    &__title {
+        font-family: $font-primary;
+        font-size: 1.9rem;
+        margin: auto;
+    }
+    &__lable {
+        font-family: $font-secondry;
+    }
+}

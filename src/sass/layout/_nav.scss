@@ -1,0 +1,16 @@
+.nav {
+    &__link {
+        text-transform: uppercase;
+        color: $gray-100;
+        font-family: $font-secondry;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            color: $white;
+        }
+    }
+}

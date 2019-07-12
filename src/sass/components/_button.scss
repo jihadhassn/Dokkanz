@@ -1,0 +1,16 @@
+.btn {
+    &__action-add {
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        padding: 1rem;
+        background-color: $color-primary;
+        color: $white;
+        font-size: 1.6rem;
+        border-radius: 5px;
+        margin: 0 .5rem;
+        margin-top: 13rem;
+        // position: fixed;
+        margin-left: -3rem;
+    }
+}

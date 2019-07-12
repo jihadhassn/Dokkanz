@@ -1,0 +1,10 @@
+<div class=" list-item__small-item__overlay ">
+    <span> 
+             <a  *ngFor="let nest of nested" [routerLink]="['/category',nest.id]" >
+
+                 <img [src]="nest.image" class="list-item__small-item__img ">
+
+                </a>
+            </span>
+    <!-- <a [routerLink]="['/category',category.id]"> -->
+</div>

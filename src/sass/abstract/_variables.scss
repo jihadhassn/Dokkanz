@@ -1,0 +1,38 @@
+//colors
+$white:white;
+$white-100:rgba(255, 255, 255, .7);
+$white-100-06:rgba(255, 255, 255, .06);
+$white-200:#fff;
+$color-primary: #1891ac;
+$color-danger: #ed5348;
+$color-primary-100:#d4edf3;
+$gray-100: #F7F7F7;
+$gray-200: rgb(228, 227, 227);
+$gray-300: #BCBCBC;
+$gray-400: #999;
+$gray-600: #777;
+$gray-800: #212529;
+$gray-900: #444;
+$gray-1000:#101214;
+$black: #000;
+$black-100:#121921;
+//fonts
+$font-primary:"Lora",
+"Helvetica",
+"Arial",
+"sans-serif";
+$font-secondry: "Bitter",
+"Helvetica",
+"Arial",
+"sans-serif";
+$font-third:Cursive;
+//borders
+$border-light: 1px solid rgba(0, 0, 0, 0.06);
+$border-meduim: 1px solid rgba(0, 0, 0, 0.198);
+$border-dark: 1px solid $gray-400;
+$border-white: 1px solid $white;
+//media query
+$horizontal-gutter: 1rem;
+$verticat-gutter: 1rem;
+$no-of-col:12;
+$container-width :114rem;

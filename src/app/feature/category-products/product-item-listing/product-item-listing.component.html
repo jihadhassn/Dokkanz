@@ -1,0 +1,31 @@
+<table class="table container tablee">
+    <thead>
+        <tr>
+            <th scope="col" class="tablee__th">Image</th>
+            <th scope="col" class="tablee__th">Name</th>
+            <th scope="col" class="tablee__th">Price</th>
+            <th scope="col" class="tablee__th">Code</th>
+            <th scope="col" class="tablee__th"></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <!-- <app-product-item *ngFor="let pro of products" [product]="pro"></app-product-item> -->
+        <tr *ngFor="let pro of products">
+            <td>
+                <img class="tablee__img" [src]='pro.image'></td>
+            <td>
+                <h4 class="tablee__td ">{{pro.name}}</h4>
+            </td>
+            <td class="tablee__td ">{{pro.price}} EGP</td>
+            <td class="tablee__td ">{{pro.code}}</td>
+            <td>
+                <a [routerLink]="['/product','edit',pro.id]" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-edit icon__item"></i></a>
+
+                <input type="checkbox" aria-label="Checkbox for following text input">
+
+            </td>
+        </tr>
+    </tbody>
+</table>
